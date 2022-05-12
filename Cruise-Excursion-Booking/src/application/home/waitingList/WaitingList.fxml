@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_myWaitingList" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.home.waitingList.WaitingListController">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="529.0" prefWidth="781.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="My Waiting List">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="758.0">
+                     <children>
+                        <TableView fx:id="waitingListTable" layoutX="14.0" layoutY="14.0" prefHeight="388.0" prefWidth="758.0">
+                          <columns>
+                            <TableColumn fx:id="waitingListID" prefWidth="137.0" text="Waiting ID" />
+                            <TableColumn fx:id="bookingID" prefWidth="148.0" text="Booking ID" />
+                              <TableColumn fx:id="customerID" prefWidth="151.0" text="Customer ID" />
+                              <TableColumn fx:id="position" prefWidth="98.0" text="Position" />
+                              <TableColumn fx:id="dateStarted" prefWidth="129.0" text="Date Started" />
+                              <TableColumn fx:id="noOfSeats" prefWidth="94.0" text="No. of Seats" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <JFXButton fx:id="btnDelete" layoutX="14.0" layoutY="424.0" onAction="#deleteWaitingList" prefHeight="39.0" prefWidth="217.0" text="Remove from Waiting List">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXButton>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

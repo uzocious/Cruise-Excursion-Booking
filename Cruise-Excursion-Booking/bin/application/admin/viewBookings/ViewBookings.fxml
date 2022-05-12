@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_viewBookings" prefHeight="200.0" prefWidth="200.0" styleClass="application.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.viewBookings.ViewBookingsController">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="529.0" prefWidth="781.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Bookings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="758.0">
+                     <children>
+                        <TableView fx:id="bookingsTable" layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="760.0">
+                          <columns>
+                            <TableColumn fx:id="bookingID" prefWidth="95.0" text="Booking ID" />
+                            <TableColumn fx:id="excursionName" prefWidth="275.0" text="Excursion Name" />
+                              <TableColumn fx:id="excursionDate" prefWidth="109.0" text="Excursion Date" />
+                              <TableColumn fx:id="portID" prefWidth="71.0" text="Port" />
+                              <TableColumn fx:id="noOfSeatsAvailable" prefWidth="142.0" text="No. of Seats Available" />
+                              <TableColumn fx:id="coachID" prefWidth="67.0" text="Coach No." />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <AnchorPane fx:id="anchor_update" layoutX="14.0" layoutY="415.0" prefHeight="84.0" prefWidth="760.0" style="-fx-border-color: #cccccc;" visible="false">
+                           <children>
+                              <JFXDatePicker fx:id="dpkUpdateExcursionDate" layoutX="223.0" layoutY="40.0" />
+                              <JFXButton fx:id="btnSubmit" layoutX="645.0" layoutY="11.0" onAction="#updateBookings" prefHeight="27.0" prefWidth="109.0" text="Submit" />
+                              <JFXComboBox fx:id="combUpdateCoach" focusColor="#009688" layoutX="454.0" layoutY="42.0" prefHeight="25.0" prefWidth="158.0" />
+                              <Label layoutX="222.0" layoutY="14.0" text="Excursion Date:" />
+                              <Label layoutX="454.0" layoutY="14.0" text="Coach:" />
+                              <Label layoutX="6.0" layoutY="25.0" text="Excursion Date and Coach can only">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="6.0" layoutY="43.0" text="be updated due to customers">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="6.0" layoutY="62.0" text="that have already booked.">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="6.0" layoutY="7.0" text="Note:">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="205.0" layoutY="2.0" orientation="VERTICAL" prefHeight="80.0" prefWidth="0.0" />
+                              <JFXButton fx:id="btnCancel" layoutX="645.0" layoutY="47.0" onAction="#reloadViewBookings" prefHeight="27.0" prefWidth="109.0" text="Cancel" />
+                              <Separator layoutX="635.0" layoutY="2.0" orientation="VERTICAL" prefHeight="80.0" prefWidth="0.0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </AnchorPane>
+                        <JFXButton fx:id="btnUpdate" layoutX="14.0" layoutY="362.0" onAction="#loadUpdateBookingsPane" prefHeight="35.0" prefWidth="109.0" text="Update" />
+                        <JFXButton fx:id="btnDelete" layoutX="145.0" layoutY="362.0" onAction="#deleteBookings" prefHeight="35.0" prefWidth="109.0" text="Delete" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

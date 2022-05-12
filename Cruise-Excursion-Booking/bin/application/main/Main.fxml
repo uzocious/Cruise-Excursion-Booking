@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorMain" prefHeight="691.0" prefWidth="800.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.MainController">
+   <children>
+      <Label layoutX="156.0" layoutY="39.0" text="SIGN IN">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="312.0" text="Forget Password ?">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="601.0" layoutY="39.0" text="REGISTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="665.0" prefHeight="25.0" prefWidth="275.0" text="Copyright © 2018 University of Bedfordshire, Group 12.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtFPEmail" focusColor="#ffff8d" labelFloat="true" layoutX="55.0" layoutY="369.0" prefHeight="38.0" prefWidth="262.0" promptText="Email" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtFPNewPassword" focusColor="#ffff8d" labelFloat="true" layoutX="55.0" layoutY="439.0" prefHeight="38.0" prefWidth="262.0" promptText="New Password" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtFPReenterPassword" focusColor="#ffff8d" labelFloat="true" layoutX="55.0" layoutY="509.0" prefHeight="38.0" prefWidth="262.0" promptText="Re-enter Password" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnSubmit" layoutX="55.0" layoutY="568.0" onAction="#ForgetPasswordButtonActionHandler" prefHeight="38.0" prefWidth="262.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtRegFirstName" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="86.0" prefHeight="38.0" prefWidth="262.0" promptText="First Name" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRegLastName" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="156.0" prefHeight="38.0" prefWidth="262.0" promptText="Last Name" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRegEmail" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="226.0" prefHeight="38.0" prefWidth="262.0" promptText="Email" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRegCabinNo" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="296.0" prefHeight="38.0" prefWidth="262.0" promptText="Cabin Number" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRegUsername" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="376.0" prefHeight="38.0" prefWidth="262.0" promptText="Username" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtRegPassword" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="446.0" prefHeight="38.0" prefWidth="262.0" promptText="Password" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtRegReenterPassword" focusColor="#ffff8d" labelFloat="true" layoutX="506.0" layoutY="516.0" prefHeight="38.0" prefWidth="262.0" promptText="Re-enter Password" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnSignUp" layoutX="506.0" layoutY="586.0" onAction="#RegistrationButtonActionHandler" prefHeight="38.0" prefWidth="262.0" text="Sign me Up!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtSignInUsername" labelFloat="true" layoutX="55.0" layoutY="86.0" prefHeight="38.0" prefWidth="262.0" promptText="Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtSignInPassword" focusColor="#ffff8d" labelFloat="true" layoutX="55.0" layoutY="156.0" prefHeight="38.0" prefWidth="262.0" promptText="Password" unFocusColor="#b2b2b2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnSignIn" layoutX="55.0" layoutY="216.0" onAction="#SignInButtonActionHandler" prefHeight="38.0" prefWidth="262.0" text="Sign In!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="17.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/userIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="17.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/passwordIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="17.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/emailIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="17.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/passwordIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="17.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/passwordIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/userIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/userIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/emailIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/cruise-shipIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/userIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/passwordIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="468.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/passwordIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="96.0" layoutX="362.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" styleClass="image-icon">
+         <image>
+            <Image url="@../icons/secureIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblFPSuccess" layoutX="133.0" layoutY="624.0" prefHeight="19.0" prefWidth="108.0" style="-fx-font-style: italic;" text="Change Successful" textAlignment="CENTER" textFill="#279e27" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegSuccess" layoutX="572.0" layoutY="643.0" prefHeight="19.0" prefWidth="130.0" style="-fx-font-style: italic;" text="Registration Successful" textAlignment="CENTER" textFill="#279e27" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

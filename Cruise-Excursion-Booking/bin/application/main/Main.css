@@ -1,0 +1,31 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+	-fx-background-color: white;
+}
+
+ .button{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+ .button:hover{
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+ }
+ 
+ .text-field{
+ 	-fx-text-fill: black;
+ 	-jfx-focus-color: #2A2E37;
+ 	-jfx-unfocus-color: #4d4d4d
+ }
+ 
+ .wrong-credentials{
+ 	-jfx-unfocus-color: red;
+ 	-jfx-focus-color: red;
+ }
+ 
+ 

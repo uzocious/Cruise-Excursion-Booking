@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_start" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.home.start.StartController">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="529.0" prefWidth="781.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Home">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="758.0">
+                     <children>
+                        <TableView fx:id="bookingsTable" fixedCellSize="0.0" layoutX="14.0" layoutY="41.0" prefHeight="372.0" prefWidth="760.0">
+                           <columns>
+                              <TableColumn fx:id="bookingID" prefWidth="89.0" text="Booking ID" />
+                              <TableColumn fx:id="excursionName" prefWidth="287.0" text="Excursion Name" />
+                              <TableColumn fx:id="excursionDate" prefWidth="103.0" text="Excursion Date" />
+                              <TableColumn fx:id="portID" prefWidth="68.0" text="Port" />
+                              <TableColumn fx:id="noOfSeatsAvailable" minWidth="0.0" prefWidth="142.0" text="No. of Seats Available" />
+                              <TableColumn fx:id="coachID" prefWidth="70.0" text="Coach No." />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="14.0" text="Select an excursion from the list of excursions below to start booking!!">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="449.0" prefHeight="24.0" prefWidth="100.0" text="Number of Seats:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXSlider fx:id="sldNumberOfSeats" layoutX="129.0" layoutY="468.0" max="40.0" min="1.0" prefHeight="14.0" prefWidth="197.0" value="20.0" />
+                        <JFXButton fx:id="btnBookNow" layoutX="636.0" layoutY="441.0" onAction="#bookNow" prefHeight="41.0" prefWidth="130.0" text="Book Now!">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="txtCabinNo" focusColor="#009688" labelFloat="true" layoutX="373.0" layoutY="445.0" prefHeight="25.0" prefWidth="214.0" promptText="Cabin Number">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="451.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/happyIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

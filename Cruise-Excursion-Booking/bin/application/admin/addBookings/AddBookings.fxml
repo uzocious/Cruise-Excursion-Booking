@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_addBookings" prefHeight="200.0" prefWidth="200.0" styleClass="application.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.addBookings.AddBookingsController">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="529.0" prefWidth="781.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Add Bookings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="758.0">
+                     <children>
+                        <JFXListView fx:id="lstExcursionNames" layoutX="14.0" layoutY="84.0" prefHeight="407.0" prefWidth="479.0" />
+                        <Label layoutX="14.0" layoutY="61.0" text="Excursion Names:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="540.0" layoutY="84.0" text="Excursion Date:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="dtpExcursionDate" layoutX="540.0" layoutY="105.0" onAction="#selectDate" prefHeight="28.0" prefWidth="221.0" />
+                        <JFXSlider fx:id="sldNumberOfSeats" layoutX="540.0" layoutY="232.0" max="40.0" prefHeight="14.0" prefWidth="187.0" showTickLabels="true" showTickMarks="true" value="35.0" />
+                        <Label layoutX="540.0" layoutY="170.0" text="Number of Seats:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="540.0" layoutY="297.0" text="Coach:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="combCoachs" focusColor="#009688" layoutX="540.0" layoutY="334.0" prefHeight="25.0" prefWidth="187.0" promptText="Select Coach" />
+                        <JFXButton fx:id="addBookings" layoutX="540.0" layoutY="388.0" onAction="#addToBookings" prefHeight="46.0" prefWidth="190.0" text="Add to Bookings">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="txtSearchExName" focusColor="#009688" layoutX="14.0" layoutY="16.0" prefHeight="25.0" prefWidth="272.0" promptText="Search for Excursion Name">
+                           <font>
+                              <Font size="12.5" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="btnSearch" layoutX="305.0" layoutY="19.0" onAction="#searchExcursion" prefHeight="30.0" prefWidth="104.0" text="Search">
+                           <font>
+                              <Font size="12.5" />
+                           </font>
+                        </JFXButton>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

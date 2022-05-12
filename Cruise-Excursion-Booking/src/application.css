@@ -1,0 +1,187 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/* CSS for the entire program's text fields */
+.text-field{
+ 	-fx-text-fill: black;
+ 	-jfx-focus-color: #2A2E37;
+ 	-jfx-unfocus-color: #4d4d4d
+ }
+
+
+
+/* Administrator page buttons*/
+/* Add Bookings page */
+#addBookings{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#addBookings:hover{
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+ }
+ 
+#btnSearch{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnSearch:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+
+
+/* View Bookings page */
+#btnUpdate{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnUpdate:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+
+#btnDelete{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnDelete:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+  
+#btnSubmit{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnSubmit:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+
+#btnCancel{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnCancel:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+  
+  
+/* View Orders page */
+#btnCancelOrder{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnCancelOrder:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+ }
+
+
+
+
+
+/* Customer page buttons*/ 
+/* Home.Start page */ 
+#btnBookNow{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnBookNow:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+  
+  
+  
+#btnAdd{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnAdd:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+  
+  
+  
+ #btnClear{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnClear:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+  
+
+#btnChange{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnChange:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+
+#btnSubmitProfile{
+ 	-fx-text-fill: #2A2E37;
+ 	-fx-border-color: #4d4d4d;
+ 	-fx-border-radius: 20px; 
+ 	-fx-background-radius: 20px;
+ }
+ 
+#btnSubmitProfile:hover{
+  	-fx-border-color: #4d4d4d;
+ 	-fx-background-color: #4d4d4d;
+ 	-fx-text-fill: white;
+  }
+  
+  
+  
